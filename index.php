@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StayWatch</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./tools/css/style.css  ">
     <!--Box icons-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
     <!-- JS Swiper-->
@@ -33,7 +33,7 @@
         <div class="swiper-wrapper">
             <!-- Box 1-->
             <div class="swiper-slide container">
-                <img src="./img/home1.jpg" alt="">
+                <img src="./tools/img/home1.jpg" alt="">
                 <div class="home-text">
                     <span>Marvel Universe</span>
                     <h1>Venom: Let There <br> Be Carnage</h1>
@@ -45,7 +45,7 @@
             </div>
             <!-- Box 2-->
             <div class="swiper-slide container">
-                <img src="./img/home2.jpg" alt="">
+                <img src="./tools/img/home2.jpg" alt="">
                 <div class="home-text">
                     <span>Marvel Universe</span>
                     <h1>Avengers: <br> Infinity War</h1>
@@ -57,7 +57,7 @@
             </div>
             <!-- Box 3-->
             <div class="swiper-slide container">
-                <img src="./img/home3.jpg" alt="">
+                <img src="./tools/img/home3.jpg" alt="">
                 <div class="home-text">
                     <span>Marvel Universe</span>
                     <h1>Spider-Man: <br> Far From Home</h1>
@@ -78,7 +78,7 @@
     </section>
 
   <!-- Initialize Swiper -->
-  <script type="module" src="main.js">
+  <script type="module" src="./tools/js/main.js">
     
   </script>
 </body>
