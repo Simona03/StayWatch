@@ -9,7 +9,11 @@ class ConnectionDB
 
         require_once 'db_data.php';
         $db =  mysqli_connect(server, user, pass, db_name);
-        return   !$db  ? die("Connecting Problem")  :  $db;
+        if(!$db){
+            die("Can`t connecting");
+        }else{
+            return $db;
+        }
     }
     public function Close($db)
     {

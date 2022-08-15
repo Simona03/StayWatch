@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,19 +10,21 @@
 </head>
 
 <body>
-    <form action="<?php __DIR__ . `/php/functions/register.php` ?>" method="post" enctype="multipart/form-data">
+    <form action="../php/functions/register.php" method="post" enctype="multipart/form-data">
         <input type="text" name="username" placeholder="Username" autocomplete="off" required>
         <input type="email" name="emial" placeholder="email" autocomplete="off" required>
         <input type="password" name="password" placeholder="password" autocomplete="off" required>
         <input type="password" name="cpassword" placeholder="c password" autocomplete="off" required>
-        <input type="file" name="image" require>
+        <input type="file" name="image" accept="image/*" require>
         <input type="submit" name="register" value="Sing Up">
     </form>
     <?php
     session_start();
+    error_reporting();
     print_r($_SESSION['err']);
     print_r($_POST);
     print_r($_FILES);
+    
     ?>
 
 </body>

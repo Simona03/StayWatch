@@ -11,7 +11,7 @@ $db =  new DatabaseFunction();
 error_reporting();
 
 $name = $_POST['username'];
-$email = $_POST['email'];
+$email = $_POST['emial'];
 
 $password = $_POST['password'];
 $cpassword = $_POST['cpassword'];

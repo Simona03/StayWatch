@@ -22,7 +22,7 @@ class DatabaseFunction
 
     public function isUserExitst($name, $email)
     {
-        $sql =  mysqli_query($this->conToDb, "SELECT * FROM `Accounts` WHERE name =  '" . $name . "'AND email=  '" . $email . "'");
+        $sql =  mysqli_query($this->db, "SELECT * FROM `Accounts` WHERE name =  '" . $name . "'AND email=  '" . $email . "'");
         echo $row = mysqli_num_rows($sql);
         if ($row > 0) {
             return true;
