@@ -26,7 +26,7 @@
             <li><a href="#newsletter">Newsletter</a></li>
         </ul>       
         <div class="bx bx-menu" id="menu-icon"></div>
-        <a href="#" class="btn">Sign In</a>
+        <a href="./view/SignIn.php" class="btn">Sign In</a>
     </header>
     <!-- Home -->
     <section class="home swiper" id="home">
