@@ -38,7 +38,7 @@ if (isset($_GET['logout'])) {
         </ul>
         <div class="bx bx-menu" id="menu-icon"></div>
         <?php if (empty($id)) { ?>
-            <a href="./view/SignIn.php" class="btn">Sign In</a>
+            <a href="./view/SignUp.php" class="btn">Sign UP</a>
         <?php } else { ?><nav>
                 <div class="action">
                     <div class="profile" onclick="menuToggle();">

@@ -36,7 +36,7 @@ $folder = "image/" . $image_name;
                                 $err_rep = "Registration Not Successful";
                             }
                         } else {
-                            $err_rep = "User is Exists";
+                            header("location: ../../view/SingIn.php");
                         }
                     } else {
                         $err_rep = "Max Limit for password is 60 sym.";
