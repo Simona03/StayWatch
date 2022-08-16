@@ -29,7 +29,7 @@ $folder = "image/" . $image_name;
                         if (!$db->isUserExitst($name, $email)) {
 
                             if (move_uploaded_file($tempname, $folder)) {
-                                $db->RegisterSql($name,$email,$password,$image_name);
+                                $db->RegisterSql($name,$email,md5($password),$image_name);
                                 header("location: ../Home.php");
                             } else {
                                 $err_rep = "Registration Not Successful";

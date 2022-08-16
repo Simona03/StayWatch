@@ -1,7 +1,7 @@
 1. Class Db_Data => localhost .....  -ready
 2. Class Connecting  - ready
 3. Class Sql_Struture - ready
-4. Register / Login System - progress
+4. Register  - done / Login System - progress
 4.1 Forgot Password
 5. Update Account
  
