@@ -30,7 +30,8 @@ $folder = "image/" . $image_name;
 
                             if (move_uploaded_file($tempname, $folder)) {
                                 $db->RegisterSql($name,$email,md5($password),$image_name);
-                                header("location: ../Home.php");
+                                $db->SelectDataProfileByEmail($email);
+                                header("location: ../../index.php");
                             } else {
                                 $err_rep = "Registration Not Successful";
                             }

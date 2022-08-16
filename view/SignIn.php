@@ -1,4 +1,10 @@
-
+<?php 
+session_start();
+error_reporting(1);
+$id =  $_SESSION['id'];
+if (empty($id) ) {
+ 
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -18,15 +24,12 @@
         <input type="file" name="image" accept="image/*" require>
         <input type="submit" name="register" value="Sing Up">
     </form>
-    <?php
-    session_start();
-    error_reporting();
-    print_r($_SESSION['err']);
-    print_r($_POST);
-    print_r($_FILES);
     
-    ?>
-
+login
 </body>
 
 </html>
+<?php }else{
+    header("location: home.php");
+}
+?>

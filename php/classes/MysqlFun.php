@@ -3,7 +3,7 @@
 namespace DatabaseFunction;
 
 use Database\ConnectionDB;
-
+session_start();
 
 class DatabaseFunction
 {
@@ -28,6 +28,20 @@ class DatabaseFunction
             return true;
         } else {
             return false;
+        }
+    }
+    public function SelectDataProfileByEmail($email)
+    {
+        $select = mysqli_query($this->db, "SELECT * FROM `Accounts` WHERE email = '$email' ");
+        $profileId = mysqli_fetch_array($select);
+        $row = mysqli_num_rows($select);
+        if ($row == 1) {
+            $_SESSION['id'] = $profileId['id'];
+            $_SESSION['name'] = $profileId['name'];
+            $_SESSION['email'] = $profileId['email'];
+            $_SESSION['image'] = $profileId['image'];
+        } else {
+            echo "Error";
         }
     }
 }
