@@ -50,7 +50,7 @@ if (isset($_GET['logout'])) {
                         </h3>
                         <ul>
                             <li>
-                                <a href="#">My Profile</a>
+                                <a href="./view/Acount.php">My Profile</a>
                             </li>
                             <li>
                                 <a href="index.php?logout=<?php echo $id; ?>">Logout </a>
